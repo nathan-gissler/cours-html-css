@@ -1,0 +1,147 @@
+/*
+@font-face {
+    font-family: 'nom_de_la_police';
+    src: url('...');
+    (...)
+}
+*/
+
+h5, h6
+{
+    color: red; /* commentaire */
+}
+.introduction
+{
+    color: rgb(0, 0, 255);
+    text-align: center;
+}
+#bonjour
+{
+    color: #00ff00;
+    background-color: black;
+}
+/*
+*
+{
+    pour tout cibler
+}
+*/
+h1 + p
+{
+    /* pour cibler un paragraphe qui suit un h1 */
+    font-size: 24px;
+    /* small, medium, large */
+    /* 1.3em (relatif, s'adapte aux écrans / tailles par défaut) */
+    font-family: Impact, "Arial Black", Arial;
+    /* ordre de priorité, si l'ordinateur n'a pas certaines polices */
+    border: 3px blue solid;
+    border-radius: 20px / 10px;
+    box-shadow: 6px 6px 6px black; /* décalage horiz / vert / adoucissement du dégradé / couleur */
+    text-shadow: 2px 3px 3px black;
+}
+/*
+h1 em
+{
+    pour cibler un em qui se trouve dans un h1
+}
+*/
+.flottant
+{
+    float: right;
+}
+.nonflottant
+{
+    clear: right;
+}
+body
+{
+    background-color: rgb(200, 200, 255); /* rgba pour la transparence */
+    /* background-image, ... */
+    /* background: permet de mettre toutes les propriétés au même endroit */
+}
+figure
+{
+    opacity: 0.6;
+    border-left: 3px dotted blue;
+}
+a:active /* que pour les liens */
+{
+    color: pink;
+}
+li:hover /* marche aussi pour les liens */
+{
+    border: 2px dotted red;
+}
+input:focus /* case sélectionnée dans un formulaire... */
+{
+    color: green;
+}
+a:visited
+{
+    color: #888888;
+}
+h1
+{
+    min-width: 550px;
+    max-width: 600px;
+    height: 50px;
+    background-color: pink;
+    margin-left: 50px; /* marge extérieur */
+    /* on peut mettre les marges de tous les côtés sur un seule ligne avec margin (sens des aiguilles d'une montre) */
+    padding: 50px; /* marge intérieur */
+}
+.une_liste
+{
+    width: 200px;
+    margin: auto; /* pour centrer le bloc sur la page, mais il faut une largeur */
+    /*overflow (pour quand le texte dépasse du bloc): visible (dépasse), hidden (coupé), scroll (barre de défilement), auto (souvent défilement) */
+    word-wrap: break-word; /* va à la ligne dans le mot si trop long */
+}
+/*
+section
+{
+    width, height, min-width, padding (intérieur), margin (extérieur), overflow et word-wrap (débordement texte)...
+}
+*/
+/*
+Flexbox
+#conteneur
+{
+    display: flex
+    flex-direction... (direction et sens dans lesquels sont alignés les éléments)
+    justify-content... (alignement axe principal)
+    align-terms... (alignement axe secondaire)
+    flex-wrap... (revenir à la ligne...)
+    align-content... (organiser avec plusieurs lignes)
+}
+.element
+{
+    margin: auto (centrer)
+}
+.element:nth-child(1) (pour prendre le premier bloc élément)
+{
+    order: 3 (réorganiser les éléments)
+    flex: 2 (peut utiliser plus ou moins d'espace restant)
+}
+*/
+/*
+.qqchose
+{
+    display: block/inline-block/none
+}
+*/
+td /* cellules des tableaux */
+{
+    border: 1px solid black;
+}
+table
+{
+    border-collapse: collapse; /* coller les cellules entre elles */
+}
+/*
+media queries : dépend de la taille de l'écran, ou autre (nb de couleurs, type d'écran...)
+media screen and (max-width: 1200px)
+{
+
+}
+*/
